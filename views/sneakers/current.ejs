@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GA-Project2</title>
+    <title>Sneakers Colection App</title>
 </head>
+<div class = "SearchFilterNew-box"> 
 <header>
     <h1>Sneakers in Current Collection</h1>
     
@@ -15,9 +16,10 @@
         <a href="home/new" >New</a>
     </div>
  <br><br>
+</div>
         
         
-
+<div class = "Page-center">
 <% for(let i = 0; i < sneakers.length; i++) { %>
     <% if(sneakers[i].status == "current") { %>
         <div class ="single-sneaker-Container">
@@ -50,6 +52,6 @@
 
         <% } %>
 <% } %>
-    
+</div>    
 </body>
 </html>

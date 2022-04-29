@@ -4,7 +4,12 @@ body{
         
 }
 
-
+.Page-center{
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  top: 25vh;
+}
 
 .single-sneaker-Container{
     display: grid;
@@ -22,7 +27,6 @@ body{
     list-style-type: none;
     
 }
-
 
 .sneaker-Btn-Box{
     display: flex;
@@ -108,5 +112,16 @@ body{
     display: grid;
     justify-content: center;
     list-style-type: none;
+
+  }
+
+  /* style for search display
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////*/
+
+  .SearchFilterNew-box{
+    position: fixed;
+    z-index: 1;
+    top: 0vh;
 
   }

@@ -6,23 +6,20 @@
         <meta charset="utf-8">
         <title>GA-Project2</title>
     </head>
+    <div class = "SearchFilterNew-box"> 
     <header>
         <h1>Sneakers in Non-Current</h1>
-        
+
     </header>
     <body>
-    
         <div>
             <form action="/Home/nonCurrent" method="GET"><%- include('../../SneakersPartials/search.ejs') %></form>
-            
             <a href="/home/new" >New</a>
         </div>
-
-
-          <br><br>
-          
-          
-               
+        <br><br>
+    </div>
+      
+    <div class = "Page-center">
         <% for(let i = 0; i < sneakers.length; i++) { %>
             <% if(sneakers[i].status == "non-current") { %>
                 <div class ="single-sneaker-Container">
@@ -54,7 +51,7 @@
                 </div>
                 <% } %>
         <% } %>
-         
+    </div>  
         
     </body>
 </html>
