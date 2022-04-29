@@ -18,6 +18,7 @@ app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(ejsLayouts);
 app.use(express.urlencoded({ extended: true }));
+app.get('/favicon.ico', (req, res) => {res.send("dummy")})
 app.use('/home', requireRouter);
 app.use('/releases', requireReleaseRouter);
 app.use('/accounting', requireAccountingRouter);
