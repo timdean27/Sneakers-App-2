@@ -1,0 +1,30 @@
+    <div class = "searchboxs">
+        <div>
+            <input type="text" name="name" value="<%= search.name%>"placeholder="Search by Name">
+        </div>
+        <div>
+            <input type="text" name="size" value="<%= search.size%>" placeholder="Search by Size">
+        </div>
+    <button type="submit">Search</button>
+    </div>
+
+    <br>
+
+    <div>
+    <select name = "dropDown">
+        <option value = "up-releaseDate">Sort by Release Date: Newest to Oldest</option>
+        <option value = "down-releaseDatee">Sort by Release Date: Oldest to Newest</option>
+        
+        <option value = "up-uniqueID">Sort by uniqueID: High to Low</option>
+        <option value = "down-uniqueID">Sort by uniqueID: Low to High</option>
+        
+        <option value = "up-retailPrice">Sort by Retail Price: High to Low</option>
+        <option value = "down-retailPrice">Sort by Retail Price: Low to High</option>
+        
+        <option value = "up-size">Sort by Size: Largest to Smallest</option>
+        <option value = "down-size">Sort by Size: Smallest to Largest</option>
+        
+     </select>
+     <button type="submit">Sort</button>
+    </div>
+

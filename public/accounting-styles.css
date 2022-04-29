@@ -1,0 +1,47 @@
+table{
+  width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+.filterBTNSgroup{width:1.20vw;
+    display: flex;
+    flex-direction: column; 
+    margin: .15vw;
+  }
+
+form{
+  width:1.20vw
+}
+.upBTN{
+  width: .5vw;
+  background-color: transparent;
+  border: solid black;
+  border-width: 0 .20vw .20vw 0;
+  padding: .25vw;
+  transform: rotate(-135deg);
+}
+
+.downBTN{
+  width: .5vw;
+  background-color: transparent;
+  border: solid black;
+  border-width: 0 .20vw .20vw 0;
+  padding: .25vw;
+   transform: rotate(45deg);
+}
+
+
+.Acc-edit-button{
+  display: inline-block;
+  background-color: rgb(215, 215, 215);
+  border: 1px solid rgb(113, 113, 113);
+  padding: 0 1.5em;
+  margin: 0.5em;
+  font: bold .5vw/2vh Arial, Helvetica;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <header>
+        <h1>Single View: <%=sneaker.name%></h1>
+        <a href="<%=onePageBack%>">Back</a>
+    </header>
+    <body >
+        
+       
+       
+            <ul>
+                <div class="single-PG-DisplayBox">
+                    <img src="<%=sneaker.imageLinks%>" height="242" width="340"/>
+                    <li>Name:   <%=sneaker.name%></a></li>
+                    <li>Brand:  <%=sneaker.brand%></a></li>
+                    <li>Size:   <%=sneaker.size %></li>
+                    <li>Color:  <%=sneaker.color %></li>
+                    <li>Style:  <%=sneaker.style %></li>
+                    <li>Style Code: <%=sneaker.styleCode %></li>
+                    <li>Retail Price:  <%=sneaker.retailPrice %></li>
+                    <li>Release Date:  <%=sneaker.releaseDate %></li>
+                    <li>URL: <a href="<%=sneaker.urlflightClub %>" target="_blank"><%=sneaker.urlflightClub %></a></li>
+                    <li>Current:    <%=sneaker.status %></li>
+                    <li>ID: <%=sneaker._id%></li>
+                    <li>uniqueID: <%=sneaker.uniqueID%></li>
+                
+                </div>
+            </ul>
+            <div>
+            <div>Description:  <%=sneaker.description %></div>
+            <a class ="edit-button" href="/home/<%=sneaker._id%>/edit">Edit</a>
+            <form action="/home/<%=sneaker._id%>?_method=DELETE" method="POST"><input type="submit" value="Delete" class="edit-button"/></form>
+            </div>
+    </body>
+</html>

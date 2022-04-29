@@ -1,0 +1,58 @@
+
+<html>
+    
+<header>
+    <h1>Upcoming <%=brand%> Releases</h1>
+
+    <a class ="back-BTN" href="/releases">Back</a>
+    <br><br>
+</header>
+
+
+<body>
+        <div>
+        <form action="/releases/<%=brand%>" method="GET"><%- include('../../../SneakersPartials/search.ejs') %></form>
+
+        <a href="/home/new" >New</a>
+        </div>
+
+    <br><br>
+                        
+<% for(let i = 0; i < sneakers.length; i++) { %>
+    <% if(sneakers[i].status == "upcoming" && sneakers[i].brand.toUpperCase() == brand.toUpperCase()) { %>
+        <div class ="single-sneaker-Container">
+            <ul>
+                <div class="sneakerDisplayBox">
+                    <img src="<%=sneakers[i].imageLinks%>" height="145.4px" width="204px" />
+                    <li>Name:   <a href="/Home/<%=sneakers[i]._id%>"> <%=sneakers[i].name%></a></li>
+                    <li>Brand:  <%=sneakers[i].brand%></a></li>
+                    <li>Size:   <%=sneakers[i].size %></li>
+                    <li>Color:  <%=sneakers[i].color %></li>
+                    <li>Style:  <%=sneakers[i].style %></li>
+                    <li>Style Code: <%=sneakers[i].styleCode %></li>
+                    <li>Retail Price:  <%=sneakers[i].retailPrice %></li>
+                    <li>Release Date:  <%=sneakers[i].releaseDate %></li>
+                    <li>URL: <a href="<%=sneakers[i].urlflightClub %>" target="_blank"><%=sneakers[i].urlflightClub %></a></li>
+                    <li>Current:    <%=sneakers[i].status %></li>
+                    <li>ID: <%=sneakers[i]._id%></li>
+                    <br>
+                    <li>uniqueID: <%=sneakers[i].uniqueID%></li>
+
+                </div>
+                
+            </ul>
+                <div class ="sneaker-Btn-Box">
+        
+                    <a class="edit-button" href="/home/<%=sneakers[i]._id%>/edit">Edit</a>
+                    <form action="/home/<%=sneakers[i]._id%>?_method=DELETE" method="POST"><input type="submit" value="Delete" class="edit-button"/></form>
+                </div>
+        </div>        
+    <% } %>
+<% } %>
+                
+       
+
+        
+        
+    </body>
+</html>

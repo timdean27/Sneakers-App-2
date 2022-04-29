@@ -1,0 +1,15 @@
+<header>
+    <h1>Edit Sneaker: <%=sneaker.brand%></h1>
+</header>
+
+    
+<body>
+    <form action="/home/<%=sneaker._id%>/?_method=put" method="POST">
+        <%- include('../../SneakersPartials/creat_forms.ejs') %>
+        <label for="uniqueID">uniqueID</label>
+        <input type="text" id="uniqueID" name="uniqueID" value="<%=sneaker.uniqueID%>" readonly="<%=sneaker.uniqueID%>"/> 
+        <br>
+        <button type="submit">Submit</button>  
+    </form>
+    <a class="cancel-btn" href="<%=onePageBack%>">Cancel</a>
+</body>

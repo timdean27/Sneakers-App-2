@@ -1,0 +1,54 @@
+<label for="name">Enter the Shoe Name</label>
+<input required type="text" id="name" name="name" value="<%=sneaker.name%>" />
+
+<br>
+<label for="brand">Select the Shoe Brand</label>
+<select name = "brand">
+    <option value = "Jordan">Jordan</option>
+    <option value = "Nike">Nike</option>
+    <option value = "Adidas">Adidas</option>
+ </select>
+
+<br>
+<label for="size">Enter the Shoe Size</label>
+<input required type="number" step=".5" min="1" max="20" id="size" name="size" value="<%=sneaker.size%>"/>
+
+<br>
+<label for="color">Enter the Shoe Color</label>
+<input type="text" id="color" name="color" value="<%=sneaker.color%>"/>
+
+<br>
+<label for="style">Enter the Shoe Style</label>
+<input type="text" id="style" name="style" value="<%=sneaker.style%>"/>
+
+<br>
+<label for="styleCode">Enter the Shoe Style Code</label>
+<input required type="text" id="styleCode" name="styleCode" value="<%=sneaker.styleCode%>"/>
+
+<br>
+<label for="retailPrice">Enter the Shoe Retail Price</label>
+<input type="text" id="retailPrice" name="retailPrice" value="<%=sneaker.retailPrice%>"/>
+
+<br>
+<label for="releaseDate">Enter Release Date</label>
+<input type="text" id="releaseDate" name="releaseDate" value="<%=sneaker.releaseDate%>"/>
+
+<br><br>
+<label for="description">Enter Description</label>
+<textarea rows="4" cols="50" id="description" name="description" type="text" value="<%=sneaker.description%>"><%=sneaker.description%></textarea>
+
+<br><br>
+<label for="urlflightClub">Enter url flightClub</label>
+<input type="text" id="urlflightClub" name="urlflightClub" value="<%=sneaker.urlflightClub%>"/>
+<br>
+<label for="imageLinks">Enter Link to Image</label>
+<input type="text" id="imageLinks" name="imageLinks" value="<%=sneaker.imageLinks%>"/>
+
+<br>
+<input type="checkbox"  id="StatusBox1" name="status" value="current">
+<label for="status">Current</label>
+<input type="checkbox"  id="StatusBox2" name="status" value="non-current">
+<label for="status">Non-Current</label>
+<input type="checkbox" id="StatusBox3" name="status" value="upcoming">
+<label for="status">Upcoming Release</label>
+<br>

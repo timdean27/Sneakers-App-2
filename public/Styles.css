@@ -1,0 +1,112 @@
+body{
+        margin-left: 7vw;
+        padding: 0px 10px;
+        
+}
+
+
+
+.single-sneaker-Container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(auto-fit, minmax(400px, max-content));
+    grid-gap: 0px; 
+
+}
+
+.sneakerDisplayBox{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+
+.sneaker-Btn-Box{
+    display: flex;
+    padding: 3px;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.edit-button {
+  display: inline-block;
+  background-color: rgb(215, 215, 215);
+  border: 1px solid rgb(113, 113, 113);
+  padding: 0 1.5em;
+  margin: 0.5em;
+  font: bold 1vw/4vh Arial, Helvetica;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+ 
+
+}
+
+/* style for side bar  
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////*/
+
+.side-bar {
+    height: 100%;
+    width: 7vw; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 25px;
+    
+  }
+
+  .side-bar a {
+      
+    display: block;
+    margin: 6px;
+    border:solid 1px lightgreen;
+    padding: 10% 5% 5% 16%;
+    text-decoration: none;
+    font-size: 18px;
+    color: lightgreen;
+    
+  }
+
+
+
+  .main-releases-links{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .main-releases-links a{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 5vw;
+    margin-right: 5vw;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  #main-releases-h1{
+    display: flex;
+    font-size: 3vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+/* style for single page 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////*/
+  .single-PG-DisplayBox{
+    display: grid;
+    justify-content: center;
+    list-style-type: none;
+
+  }

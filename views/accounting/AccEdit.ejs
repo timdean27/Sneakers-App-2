@@ -1,0 +1,30 @@
+<header>
+<h1>Editing Sneaker:<%=account.name%></h1>
+<h1>uniqueID:<%=account.uniqueID%></h1>
+
+<br><br>
+</header>
+
+<body>
+<form action="/accounting/<%=account._id%>/?_method=put" method="POST">
+<label for="soldDatee">Enter the Date Sold</label>
+<input  type="text" id="soldDate" name="soldDate" value="<%=account.soldDate%>" placeholder="soldDate"/>
+<br>
+<label for="retailPrice">Retail Price</label>
+<input type="text" id="retailPrice" name="retailPrice" value="<%=account.retailPrice%>" placeholder="<%=account.retailPrice%>" readonly="<%=account.retailPrice%>"/>
+<br>
+<label for="soldPrice">Enter the Price Sold for</label>
+<input type="text" id="soldPrice" name="soldPrice" value="<%=account.soldPrice%>" placeholder="soldPrice"/>
+
+<br>
+<label for="marketPrice">Enter the current Market</label>
+<input  type="text" id="marketPrice" name="marketPrice" value="<%=account.marketPrice%>" placeholder="marketPrice"/>
+
+<br>
+<label for="profit">Enter the Profit</label>
+<input  type="text" id="profit" name="profit" value="<%=account.profit%>" placeholder="profit" readonly="<%=account.profit%>"/>
+<br><br>
+<button type="submit">Submit</button>
+</form>
+<a class="cancel-btn" href="/accounting">Cancel</a>
+</body>

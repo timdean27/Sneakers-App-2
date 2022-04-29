@@ -1,0 +1,94 @@
+<link rel="stylesheet" type="text/css" href="../accounting-styles.css"/>
+
+
+
+
+<table>
+    <tr>
+
+    <th><h3>Update</h3></th>
+    <th><h3>uniqueID</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-uniqueID" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-uniqueID"type="submit"></button>
+            </div>
+        </form>
+    </th>
+
+    <th><h3>Name</h3></th>
+    <th><h3>Release Date</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-releaseDate" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-releaseDate"type="submit"></button>
+            </div>
+        </form>
+    </th>
+
+    <th><h3>Sold Date</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-soldDate" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-soldDate"type="submit"></button>
+            </div>
+        </form>
+    </th>
+
+    <th><h3>Retail Price</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-retailPrice" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-retailPrice"type="submit"></button>
+            </div>
+        </form>
+    </th>
+    <th><h3>Market Price</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-marketPrice" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-marketPrice"type="submit"></button>
+            </div>
+        </form>
+    </th>
+    <th><h3>Sold Price</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-soldPrice" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-soldPrice"type="submit"></button>
+            </div>
+        </form>
+    </th>
+    <th><h3>Profit</h3>
+        <form action="/accounting" method="GET">
+            <div class="filterBTNSgroup">
+            <button class = "upBTN" name="filterBTN" value="up-profit" type="submit"></button>
+            <button class = "downBTN" name="filterBTN" value="down-profit"type="submit"></button>
+            </div>
+        </form>
+    </th>
+    <th><h3>Status</h3></th>
+    </tr>
+
+
+
+<% for(let i = 0; i < account.length; i++) { %>
+    <tr>
+        <td>
+            <a class="Acc-edit-button" href="/accounting/<%=account[i].id%>/edit">Edit</a>
+            <form action="/accounting/<%=account[i].id%>?_method=DELETE" method="POST"><input type="submit" value="Delete" class="Acc-edit-button" /></form>
+        </td>
+        <td><%=account[i].uniqueID%></td>
+        <td><%=account[i].name%></td>
+        <td><%=account[i].releaseDate%></td>
+        <td><%=account[i].soldDate%></td>
+        <td><%=account[i].retailPrice%></td>
+        <td><%=account[i].marketPrice%></td>
+        <td><%=account[i].soldPrice%></td>
+        <td><%=account[i].profit%></td>
+        <td><%=account[i].status%></td>
+        
+    </tr>
+
+<%} %>
+  </table>

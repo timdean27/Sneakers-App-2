@@ -1,0 +1,92 @@
+[   
+{
+"uniqueID":"00000001"
+},
+{
+"uniqueID":"00000002"
+}, 
+{
+"uniqueID":"00000003"
+},
+{
+"uniqueID":"00000004"
+},
+{
+"uniqueID":"00000005"
+},
+{
+"uniqueID":"00000006",
+"soldDate": "4/11/2021",
+"marketPrice": 300,
+"soldPrice":320
+},
+{
+"uniqueID":"00000007"
+},
+{
+"uniqueID":"00000008",
+"soldDate": "3/6/21",
+"marketPrice": 400,
+"soldPrice":400
+},
+{
+"uniqueID":"00000009",
+"soldDate": "8/6/21",
+"marketPrice": 220,
+"soldPrice":225
+},
+{
+"uniqueID":"00000010",
+"soldDate": "4/15/21",
+"marketPrice": 300,
+"soldPrice":280
+},
+{
+"uniqueID":"00000011",
+"soldDate": "12/15/21",
+"marketPrice": 90,
+"soldPrice":90
+},
+{
+"uniqueID":"00000012",
+"soldDate": "12/21/21",
+"marketPrice": 600,
+"soldPrice":450
+},
+{
+    "uniqueID":"00000013",
+    "soldDate": "1/4/21",
+    "marketPrice": 250,
+    "soldPrice":250
+},
+{
+    "uniqueID":"00000014"
+},
+{
+    "uniqueID":"00000015"
+},
+{
+    "uniqueID":"00000016"
+},
+{
+    "uniqueID":"00000017"
+},
+{
+    "uniqueID":"00000018",
+    "soldDate": "5/24/21",
+    "marketPrice": 300,
+    "soldPrice":290
+},
+{
+    "uniqueID":"00000019"
+},
+{
+    "uniqueID":"00000020"
+},
+{
+    "uniqueID":"00000021",
+    "soldDate": "7/24/21",
+    "marketPrice": 450,
+    "soldPrice":275
+}
+]
