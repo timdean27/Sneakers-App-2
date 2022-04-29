@@ -137,9 +137,7 @@ router.put('/:id', (req, res) => {
     req.body.styleCode = req.body.styleCode.toUpperCase()
     req.body.size = parseFloat(req.body.size)
     req.body.brand = capFirstLetter(req.body.brand)
-
-    //console.log("onePageBack[0]",onePageBack[0])
-    //console.log("onePageBack[1]",onePageBack[1])
+    console.log(req.body.brand)
     const id = req.params.id;
     Sneaker.findByIdAndUpdate(
         id,
