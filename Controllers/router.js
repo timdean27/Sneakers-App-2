@@ -1,6 +1,6 @@
 const express = require('express');
-const Sneaker = require('../models/sneaker-model');
-const Accounting = require('../models/accounting-model');
+const Sneaker = require('../Models/sneaker-model');
+const Accounting = require('../Models/accounting-model');
 const router = express.Router();
 let onePageBack =[]
 
