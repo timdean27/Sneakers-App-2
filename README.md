@@ -2,9 +2,9 @@
 
 ## About The Project
 
-As a personal collecter/resller of sneakers I wanted to creat an appthat will let me categorize, add, update, and delete sneakers in my collection/inventory as well as a page to keep track of upcoming releases
+As a personal collecter/reseller of sneakers I wanted to create an app that will let me categorize, add, update, and delete sneakers in my collection/inventory as well as a page to keep track of upcoming releases.
 
-I also wanted to keep some minior accounting information to track when the sneaker was sold for how much and if the sale was profitable.
+I also wanted to keep some minor accounting information to track when the sneaker was sold, for how much, and if the sale was profitable.
 
 ### Built With
 
@@ -44,7 +44,7 @@ I also wanted to keep some minior accounting information to track when the sneak
 
 
 ### Future Additions 
-- Would like to scrap external websites to get current market price of sneakers
+- Would like to scrape external websites to get current market price of sneakers
 - Add additonal information to accounting page
 - Complete Styling 
 - Multi Image display
