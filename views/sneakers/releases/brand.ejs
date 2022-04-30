@@ -30,10 +30,10 @@
                         <li>Style:  <%=sneakers[i].style %></li>
                         <li>Style Code: <%=sneakers[i].styleCode %></li>
                         <li>Retail Price:  <%=sneakers[i].retailPrice %></li>
-                        <li>Release Date:  <%=sneakers[i].releaseDate %></li>
+                        <li>Release Date:  <%=sneakers[i].releaseDate.toLocaleDateString() %></li>
                         <li>URL: <a href="<%=sneakers[i].urlflightClub %>" target="_blank"><%=sneakers[i].urlflightClub %></a></li>
                         <li>Current:    <%=sneakers[i].status %></li>
-                        <li>ID: <%=sneakers[i]._id%></li>
+                        
                         <br>
                         <li>uniqueID: <%=sneakers[i].uniqueID%></li>
 

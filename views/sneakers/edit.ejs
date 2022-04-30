@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
 <header>
-    <h1>Edit Sneaker: <%=sneaker.brand%></h1>
+    <h1>Edit Sneaker: <%=sneaker.name%></h1>
+    <img src="<%=sneaker.imageLinks%>" height="145.4px" width="204px" />
 </header>
 
     
 <body>
+    
     <form action="/home/<%=sneaker._id%>/?_method=put" method="POST">
         <%- include('../../SneakersPartials/creat_forms.ejs') %>
         <label for="uniqueID">uniqueID</label>
         <input type="text" id="uniqueID" name="uniqueID" value="<%=sneaker.uniqueID%>" readonly="<%=sneaker.uniqueID%>"/> 
         <br>
-        <button type="submit">Submit</button>  
+        <button type="submit">Submit</button> 
+        <a class="cancel-btn" href="<%=onePageBack%>">Cancel</a> 
     </form>
-    <a class="cancel-btn" href="<%=onePageBack%>">Cancel</a>
+    
 </body>
 </html>

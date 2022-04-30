@@ -1,12 +1,12 @@
-<link rel="stylesheet" type="text/css" href="../accounting-styles.css"/>
 
-
+<html>
+    <link rel="stylesheet" type="text/css" href="../accounting-styles.css"/>
 
 
 <table>
     <tr>
 
-    <th><h3>Update</h3></th>
+    <th><h3 >Update</h3></th>
     <th><h3>uniqueID</h3>
         <form action="/accounting" method="GET">
             <div class="filterBTNSgroup">
@@ -81,7 +81,7 @@
         <td><%=account[i].uniqueID%></td>
         <td><%=account[i].name%></td>
         <td><%=account[i].releaseDate%></td>
-        <td><%=account[i].soldDate%></td>
+        <td><%=account[i].soldDate %></td>
         <td><%=account[i].retailPrice%></td>
         <td><%=account[i].marketPrice%></td>
         <td><%=account[i].soldPrice%></td>
@@ -92,3 +92,4 @@
 
 <%} %>
   </table>
+  </html>
