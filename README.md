@@ -11,7 +11,7 @@ I also wanted to keep some minor accounting information to track when the sneake
 * Javascript
 * Express
 * Node.js
-* Mongoose
+* MongoDB
 * EJS
 * CSS
 
